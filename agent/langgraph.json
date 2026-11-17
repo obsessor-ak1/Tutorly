@@ -1,0 +1,9 @@
+{
+  "dependencies": ["."],
+  "env": "./.env",
+  "graphs": {
+    "topic_planner": "./agents/topic_curriculum_planner/planner.py:topic_planner",
+    "resource_gatherer": "./agents/tutor/subagents/gatherer/resource_gatherer.py:gatherer",
+    "tutor": "./agents/tutor/tutor.py:dummy_tutor"
+  }
+}
