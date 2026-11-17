@@ -24,6 +24,17 @@ const LessonSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  
+  thread_id: {
+    type: String,
+    required: false
+  },
+
+  // URLs of the resources the user selected for the tutor session.
+  resources: {
+    type: [String],
+    default: []
+  },
 
   description: {
     type: String,

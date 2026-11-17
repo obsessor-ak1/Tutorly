@@ -3,8 +3,7 @@
 import { auth } from "@/auth";
 import dbConnect from "@/lib/db";
 import { Topic } from "@/models/Topic";
-
-const API_BASE = process.env.AGENT_BASE_URL || 'http://localhost:8000';
+import { AGENT_BASE_URL as API_BASE } from "@/lib/agentConfig";
 
 export async function generateTopicAction(payload) {
   try {
