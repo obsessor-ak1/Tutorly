@@ -1,0 +1,9 @@
+{
+  "$schema": "https://unpkg.com/omnideploy-cli/schema.json",
+  "providers": {
+    "vercel": {
+      "project": "app",
+      "projectId": "prj_ywCfqmSyxmUDYwv7UUFueMtflplA"
+    }
+  }
+}
