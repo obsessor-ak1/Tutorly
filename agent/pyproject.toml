@@ -1,0 +1,17 @@
+[project]
+name = "tutorly"
+description = "An agent and API for learning orchestration on Tutorly platform"
+version = "0.1"
+authors = [
+    { name = "Aayush Kumar", email = "aayushkumarfirst@gmail.com" }
+]
+dependencies = [
+    "langgraph>=1.2",
+    "fastapi>=0.141",
+    "langchain>=1.4"
+]
+requires-python = ">=3.12"
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"

@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Import routers and database
 from api.topic import router as topic_router
+from api.tutor import router as tutor_router
 from database.client import mongodb
 
 @asynccontextmanager
@@ -34,6 +35,7 @@ app.add_middleware(
 
 # Include API routers
 app.include_router(topic_router)
+app.include_router(tutor_router)
 
 @app.get("/")
 async def root():
